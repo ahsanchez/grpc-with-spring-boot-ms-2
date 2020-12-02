@@ -1,0 +1,19 @@
+# local configuration
+server:
+  port: 8082
+grpc:
+  server:
+    port: 9091
+
+# remote server configuration
+remote:
+  server:
+    grpc:
+      host: localhost
+      port: 9090
+    restapi:
+      url: http://localhost:8083/product
+
+adapter:
+  elapsedTimes:
+    file: elapsed-times.csv
