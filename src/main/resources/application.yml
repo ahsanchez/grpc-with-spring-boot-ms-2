@@ -4,6 +4,12 @@ server:
 grpc:
   server:
     port: 9091
+  client:
+    order-service:
+      address: static://localhost:9090
+      negotiationType: plaintext
+
+
 
 # remote server configuration
 remote:
